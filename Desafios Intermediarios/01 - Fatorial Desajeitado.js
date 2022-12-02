@@ -22,8 +22,8 @@
 // - "print": imprime um texto de saída (output) e pula uma linha ("\n") automaticamente. 
 
 
-let lines = gets().split("\n"); 
-let n = parseInt(lines.shift()); 
+let lines = 10; 
+let n = lines; 
 
 let r = n;
 let s = 0;
@@ -31,7 +31,7 @@ let x = 1;
 
 if (n <= 2) { 
 
- print(n); 
+ console.info(n); 
 
 } else {
     n--;
@@ -52,7 +52,7 @@ if (n <= 2) {
         }
         x++;
     }
-    print(s);
+    console.info(s);
 }
 
 // TODO: Calcule o valor do fatorial de "n", atribuindo o retorno a "r".
